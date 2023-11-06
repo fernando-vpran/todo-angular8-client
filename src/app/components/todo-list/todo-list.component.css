@@ -1,0 +1,86 @@
+#todolist-row {
+    flex-direction: row-reverse;
+}
+
+#input-add-todo {
+    padding-left: 0;
+}
+
+/* TASK COUNTERS */
+.div-counter {
+    background-color: #DBE8F6;
+    border-radius: 8px;
+    height: 55px;
+    width: auto;
+    padding: 10px 13px;
+}
+
+.counter {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.counter-desc {
+    font-size: 14px;
+    line-height: normal;
+}
+
+#counter-todo {
+    color: blue;
+}
+
+#counter-done {
+    color: green;
+}
+
+/* TASK LIST */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.7rem 2rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.item:last-of-type {
+    border-bottom: none;
+}
+
+.item form button {
+    width: 60px;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    border: 2px solid #c0c0c0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.item input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    flex: 1 1 0%;
+    margin-right: 0.5rem;
+    height: 36px;
+}
+
+.item input[type="text"]:not(:disabled) {
+    border-bottom: 2px solid black;
+}
+
+.item.complete {
+    opacity: 0.55;
+}
+
+.item.complete input[type="text"] {
+    text-decoration: line-through;
+}

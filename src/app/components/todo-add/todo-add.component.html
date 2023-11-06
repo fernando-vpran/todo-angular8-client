@@ -1,0 +1,6 @@
+<div class="mt-1 col-md-9">
+    <form class="d-flex column-gap-1">
+        <input class="form-control" type="text" placeholder="Add to-do" [(ngModel)]="todo.name" id="name" required name="name"/>
+        <button class="btn btn-primary" type="submit" (click)="addTodo()">Add</button>
+    </form>
+</div>
